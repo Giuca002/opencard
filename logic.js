@@ -127,11 +127,8 @@ flipCardElement.addEventListener('touchstart', function(event) {
     // Prevent the default action to avoid double click/tap
     event.preventDefault();
     // Call your flipCard function here
-    if (!touchStartFired) {
-        touchStartFired = true;
-        flipCard();
+    flipCard();
         
-    }
 });
 
 // For desktop browsers
