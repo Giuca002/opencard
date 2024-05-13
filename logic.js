@@ -120,4 +120,3 @@ function jumpTo() {
 }
 // Add event listener to flip card on click
 document.querySelector('.flip-card-inner').addEventListener('click', flipCard);
-document.querySelector('.flip-card-inner').addEventListener('touchend', flipCard);
