@@ -1,0 +1,14 @@
+{
+  "name": "Open Card",
+  "short_name": "Open Card",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "opencard.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
+
