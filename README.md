@@ -1,11 +1,18 @@
-# opencard
-A simple open source flash card website
+# Open Card
+A simple open source flashcard study tool soultion.
 
-## Progress
-If you follow the format of the current flashcard text file it will work. I'm still adding more features like darkmode : )
+## In-Progress
+- Themes
+- Flashcard editor
+- Images in flashcards
+- Flashcard repo for sharing sets
 
 ## Live Demo
-View the live demo at https://giuca002.github.io/opencard/
+View the live demo at [here](https://giuca002.github.io/opencard/)! On Safari on IOS you can click on share and add to home screen to use the web app.
 
 ## Usage
-Simply download the example flashcard text file and click on load set in the website to try it 
+Simply download the example flashcard text file and click on load set in the website to try it. Using this format you can also create your own flashcards.
+
+## Credits
+- https://www.svgrepo.com/svg/511089/note
+- https://www.w3schools.org
