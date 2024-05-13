@@ -120,9 +120,8 @@ function jumpTo() {
 }
 // Add event listener to flip card on click
 var flipCardElement = document.querySelector('.flip-card-inner');
-var touchStartFired = false;
+let touchStartFired = false;
 
-// For touch-enabled devices
 flipCardElement.addEventListener('touchstart', function(event) {
     // Prevent the default action to avoid double click/tap
     event.preventDefault();
@@ -133,9 +132,17 @@ flipCardElement.addEventListener('touchstart', function(event) {
     }
 });
 
+// Reset touchStartFired when touch moves outside flipCardElement
+document.addEventListener('touchmove', function(event) {
+    if (!event.target.closest('#flipCardElement')) {
+        touchStartFired = false;
+    }
+});
+
 flipCardElement.addEventListener('touchend', function(event) {
     touchStartFired = false;
 });
+
 
 // For desktop browsers
 flipCardElement.addEventListener('click', function(event) {
