@@ -1,0 +1,335 @@
+abstract data types (ADT’s): lists and other collections used to develop programs
+abstraction: to reduce detail or information for a purpose in a program; to help improve focus on a relevant concept; or to understand or solve a problem
+algorithm: a step-by-step set of instructions implemented by a program to develop and express solutions to a computational problem
+American Standard Code for Information Interchange (ASCII): character encoding scheme used to translate characters into numerical values
+anonymity software: software that hides your browsing history and prevents use of cookies to track your data
+antivirus software: software that you install on your computer or network to prevent viruses from infecting your computer
+append (in list operations): adding an element to the end of a list
+ASCII: see American Standard Code for Information Interchange
+assignment: when you put a value into a memory location and give that location a name in a program; on the AP CS Principles exam, the assignment operator is represented with an arrow (←)
+authentication: a step in encryption that verifies that the recipient of the message is who should be receiving the message; see Certificate Authorities
+bandwidth: see system bandwidth
+binary search: a search algorithm that finds a target in an ordered set by halving the set being searched at each stage until the target is found or a set of one element is all that remains
+binary number system: two-digit number system where each number represents a power of 2
+bit: a single binary digit which can contain either a 1 or a 0
+block-based language: one of two typical languages seen in the AP Computer Science Principles course; writing code in this language often involves dragging and dropping pictorial code, rather than typing text; see also text-based language
+boolean logic: branch of algebra where all values are represented by either true or false
+boolean data type: a variable that is either true or false
+browser: see web browser
+browsing history: list of web page addresses (and related data) that a person has viewed
+capacity: see system capacity
+central processing unit (CPU): the part of a computer that manages processes
+Certificate Authority (CA): issues digital certificates that validate ownership of encrypted keys used in secured communications; used in authentication step of public key encryption; managed by public key infrastructure
+circuit: a complete path that allows electrical current to flow from a high voltage to low voltage; fundamental concept used in component design to manipulate data (bits)
+citizen science: collection and analysis of data by non-scientists on home computers; often performed in collaboration with professional scientists
+client/server model (for network): use of a central computer (server) to manage resources on a network
+cloud computing/storage: rather than using a local computer, this form of computation uses a network of remote servers to calculate and/or store data; has fostered new ways to communicate and collaborate
+clustering data: grouping data sets together to provide an argument that a pattern exists
+complexity (of an algorithm): the amount of logical reasoning (sometimes measured in lines of code) required to create an algorithm
+computing: using computer algorithms to solve problems
+condition: a decision in an algorithm based on a Boolean value (either true or false), used to control selection in an algorithm
+constraint: limit placed to control inputs or outputs
+cookie: information stored by a browser to track movement and information triggered by a person viewing a website
+correctness (of a program): depends on correctness of program components, including code segments and procedures
+Creative Commons: a copyright license that can be used for free distribution while still ensuring proper attribution with appropriate citations
+credibility: see source credibility
+cryptography: the study of hiding messages or finding hidden messages
+crowdsourcing: multiple people working (often online) together to complete a task
+curated databases: database organized to facilitate research
+cyberattack: attempt to penetrate, use, or access information on another computer or network without permission; examples include phishing or viruses
+cybercrime: criminal activities carried out by using a computer or network
+cybersecurity: technology, processes, and practices designed to protect digital data on networks and devices on these networks; includes hardware, software, and human components
+cyberwarfare: use of technology by a nation-state, organization, or individual to disrupt or damage computers or networks of another nation-state or organization
+database: a large collection of data that can be organized, searched, clustered, classified, transformed, displayed, and/ or filtered to gain new insight or to make conclusions
+data compression: technique that reduces the number of bits stored or transmitted; could be lossy or lossless
+data mining: the analysis of large databases to retrieve new insights; example; artificial intelligence that has enabled innovation in medicine, business, and science
+decidable problem: problem in which an algorithm can be constructed to answer “yes” or “no” for all inputs
+desktop computer: personal computer meant to stay in one place
+digital certificate: forms digital connection between the identity of the recipient and the public key on this certificate; used for authentication step of public key encryption; managed by Certificate Authorities (CAs)
+“digital divide”: expression for the differing access to computing and the Internet based on socioeconomic or geographic characteristics of a population
+distributed denial-of-service (DDoS) attacks: compromise performance of a device that is on a network by flooding it with requests from multiple systems
+distributed system: model where multiple networked components communicate and coordinate their actions by passing messages to accomplish a task
+domain name syntax: hierarchical definition of what a domain should look like; for example; rea.com. The “.” character marks the location of the type of address this is. To the right of the “.” is “com”. This syntax will then look for where “rea” is located among all “com” addresses.
+data streaming: transfer of data at a high rate from the sender to the receiver through a network. Example; used by music services and movie providers to provide content to users.
+decryption: using mathematical algorithms to decode (decipher) a message; usually this algorithm is used to protect encrypted information from unauthorized viewers; see encryption
+Digital Millennium Copyright Act (DMCA) of 1998: legislation passed to protect copyrighted digital data while also making it more widely available
+domain name system (DNS): a hierarchical naming system designed to identify individual entities on the Internet or any network; was not designed to be completely secure
+domain name server: translates domain names to Internet Protocol (IP) addresses
+efficiency (of an algorithm): measure of the execution time and memory usage of an algorithm; often represented using Big-O notation
+email: message from one computer to one or more recipients via a network; has fostered a new way to communicate and collaborate
+element (of a list): one specific item in a list
+encryption: using mathematical algorithms to encode (hide) a message so only those that should read it can read it; see symmetric encryption and public key encryption
+filtering data: removing parts of data sets to simplify data and/or to make conclusions more evident
+firewall: part of a computer system or network that monitors incoming and outgoing communication and decides what will be allowed to travel (in or out) based on security rules
+floating-point value: used in a programming language to represent non-integers
+Global Positioning System (GPS): network of orbiting satellites that are used by devices on earth to calculate the exact speed or location of the device on earth; example of a technology that has changed how humans travel, navigate, or find information related to geolocation
+hardware component: physical part of a computer
+heuristic: algorithmic approach applied to improve an algorithm that is based on finding solutions among all available options using a general set of rules; may result in approximate solutions instead of exact solutions; may be helpful to find solutions in reasonable time; may be helpful to find approximate solutions to unsolvable problems
+hexadecimal number system: sixteen-digit number system where each number represents a power of 16
+hierarchical system: system where devices and protocols are in an interdependent relationship and ordered into several levels; every member of this system has some other member above it and another member below it with the exception of the top level
+hypertext transfer protocol (HTTP): standard for how files are transferred on the Internet
+hypothesis: a guess about how one action may cause another action to occur
+index (of a list): location in a list, must be a number greater than 0 or less than or equal to the length of the list in the end-of-course exam
+input (to a procedure): the data that an algorithm needs to be able to run
+integrated circuit: one of the hardware components of a computer, sometimes called a chip or microchip; it is a set of electronic circuits such as transistors and resistors that work together to accomplish a goal
+intellectual property: invention created and credited to a person or corporation
+internet: a connection of devices connected to each other via hardware, including routers, servers, and other devices, each of which is given an IP Address and must follow protocols
+Internet, the: the worldwide connection of devices to each other via hardware including routers, servers, and other devices, each of which is given an IP address and must follow protocols
+Internet Engineering Task Force (IETF): develops and oversees Internet standards and Internet protocols
+Internet Protocol (IP): the way devices communicate with each other
+Internet Protocol (IP) addresses: locations given to devices
+Internet standard: evolving “rules” that govern how a device can join and/or communicate on the Internet
+iteration (in an algorithm): a loop or repeated behavior in an algorithm; one of three different parts of any algorithm (see sequencing and selection)
+key (in encryption or decryption): variable applied to a block of text to encrypt or decrypt that text; the length of the key is a factor in the security and performance of encryption algorithms
+latency: see system latency
+linear search: a search algorithm that finds a target by looking at each item, one at a time, until the end of the set is reached or the target is found
+list: a collection of data in which each item is identified by a corresponding index
+logic gate: one of the building blocks of a computer chip, logic gates typically take two inputs and return either true or false; combinations of operations of gates can create different streams of logic used in calculations and processes in advanced chips such as integrated circuits
+lossless data compression: data compression technique where the number of bits needed to store or transmit information is reduced and the original data can be completely reconstructed
+lossy data compression: data compression technique where the number of bits needed to store or transmit information is reduced, but the original data cannot be reconstructed
+machine learning: the ability of a computer to learn without being explicitly programmed; example; artificial intelligence that has enabled innovation in medicine, business, and science
+memory: any physical device in a computer that stores information
+metadata: data about data that provides additional information; this data can be descriptive data about an image, a web page, or other complex object
+mobile computer: any personal computing device not constrained to a desktop
+model: a way of representing a real situation in a more abstract way (with less detail)
+modulus: mathematical operation that returns the remainder (for example, the modulus of 12 and 5 is 2)
+Moore’s Law: prediction that the number of transistors per square inch on an integrated circuit will double each year; has encouraged industries that use computers to plan future research and development based on increases in computing power
+network: group of two or more systems linked together
+open access: online research sources that are available for anyone to use
+output (of an algorithm): what is made available after the input data is transformed by an algorithm
+overflow error: error caused when a number is too large for the memory allocated for it. For example, the decimal value of the non-integer ⅓ is a non-terminating decimal. There is no way for a computer to allocate an infinite number of bits so the computer stores this number using the highest number of bits possible. The user needs to know this and not assume that the value is exact.
+packet: way in which data is packaged during data transfer on a network
+parameter: input to a procedure
+peer-to-peer network: network that does not follow the client/server model; members of this network are of equal value and share resources
+phishing: cybercrime where a website, email, or other digital form of communication attempts to obtain personal information from a person by disguising itself as something that the person would normally use to share this information
+plagiarism: occurs when one person presents another’s ideas as their own
+procedure: named grouping of programming instructions code used to manage complexity or repeated code in a program
+process: a behavior that uses memory, a central processing unit, input, and output that can execute alone or at the same time as other processes
+processor: the main controller (or “brain”) of a computer; it decides which process(es) will run, for how long, and what inputs to provide and what outputs to receive and share with these processes; uses RAM and ROM to manage memory needs
+program: set of computer instructions assembled to help us create, analyze, understand, and/or solve problems or to automate a process
+programming language: computer instructions used to translate human ideas into software
+proxy serveral: lows user to make connection to another network service without going through the local server that the person would normally need to use
+pseudo: codewords used to organize thoughts to help plan writing code; pseudocode helps programmers translate specifications (requirements) into code
+public key encryption: asymmetric encryption scheme; involves two keys (one private and one public) where anyone can use the public key to encrypt a message, but only the sender and recipient know the private key so their data is protected
+public key infrastructure: supports distribution and identification of public encryption keys so before information is exchanged the identity of the other party is verified (authenticated)
+random access memory (RAM): one of two memory types (see Read Only Memory) used by a computer processor; this memory is temporary, used to perform an action, and erased when the action is completed and when the computer is powered off
+read only memory (ROM): one of two memory types (see Random Access Memory) used by a computer processor; this memory is permanent and is available even after the computer is powered off
+reasonable time: way to analyze an algorithm in terms of the number of steps required to solve a problem. An algorithm is said to run in reasonable time if the number of steps the algorithm takes is less than or equal to a polynomial function (constant, linear, square, cube, etc.) of the size of the set.
+redundant system: system that is self-checking to improve system reliability
+round-off error: caused with operations on floating-point values; an example is a computer trying to store ⅓. A computer cannot store ⅓ since it has infinitely repeating digits. Each machine would manage this differently based on the fixed number of bits allocated.
+router: device that supports the connection between two or more networks
+routing (of packets): way in which data is sent on a network
+scientific computing: use of advanced computing capabilities to understand and solve complex and often multidisciplinary problems; has enabled innovation in science and business
+search engine: a website that allows you to search the Internet and uses algorithms to decide the best match to what you searched
+secure sockets layer/transport layer security (SSL/TLS): standards for sharing information and communicating between browsers and servers
+segments (of a program): smaller parts of a procedure; segments of code combine to create a procedure
+selection (in an algorithm): using a condition to control the logical path taken by an algorithm; one of three different parts of any algorithm (see selection, sequencing, and iteration)
+semantic error: the code as written does not perform as planned when it runs; depends on your logic
+sensor: device that detects, measures, records, or responds to a physical property
+sequencing (in an algorithm): ordering the steps of an algorithm; one of three different parts of any algorithm (see selection and iteration)
+sequential search: see linear search
+server: device that manages access and responds to requests on a network
+short-circuit (in boolean logic): when the result of a logical expression can be evaluated without seeing the entire expression; two examples; It does not matter what comes after the “or.”; It does not matter if what is in the blank is TRUE or FALSE.
+short message service (SMS): short text message, has fostered a new way to communicate and collaborate
+simple mail transfer protocol (SMTP): standard for how email messages are sent and received on the Internet
+simulation: a program created to model a real situation with less detail to understand or solve a problem
+size: see system size
+smart technology: technology that responds to the user and/ or the environment; examples include smart grids, smart buildings, and smart transportation
+social media: online applications that allow people to share information and connect with others; has fostered a new way to collaborate and communicate
+solvable problem: a problem that can be solved exactly using an algorithm
+source credibility: deciding if a source is reliable based on the reputation and credentials of the author(s), publisher(s), site owner(s), and/or sponsor(s)
+specifications: the key details that need to be included in an algorithm; examples/ elements defined in the specifications are the inputs, outputs, data types, and name(s) of procedures called or being created
+symmetric encryption: method of encryption involving one key for encryption and decryption
+syntax error: the written code does not match the computer language; often produces a compile error when you try to run your program
+system bandwidth: measure of amount of data (measured in bits) that can be sent in a fixed amount of time
+system capacity: amount of bits that could be stored on a system
+system latency: time elapsed between the transmission of request and receipt of a reply; round trip time
+system size: amount of bits that can be stored on a system
+targeted advertising: form of advertising that uses data available about a consumer to appeal to that consumer directly
+text-based language: one of two types of languages commonly seen in programming; usually created using a text editor that may or may not need to compile to run; see block-based language
+transistor: one of the building blocks of a computer chip, controls flow of electricity by amplifying or redirecting it
+undecidable problem: problem in which no algorithm can be constructed to answer “yes” or “no” for all inputs
+unsolvable problem: a problem that cannot be solved exactly using any algorithm
+virus: code that is capable of duplicating itself; often disrupts or damages data
+web browser: program on computer that allows you to visit websites; this program runs on your computer when you type website addresses; the browser displays the files located at that address; browsers are governed by protocols set by the Internet Engineering Task Force, including hypertext transfer protocol and secure sockets layer/transport layer security.
+World Wide Web: the set of interconnected documents identified by the hyperlinks and Uniform Resource Locators (URLs) or information space of the Internet.
+The Internet: A collection of networks or network of networks, hierarchical, redundant
+End-to-end architecture: In a network, the end nodes (server and client) provide the functionalities. The routers, etc. (intermediaries) only move the bits.
+Devices: A thing made or adapted for a particular purpose, especially a piece of mechanical or electronic equipment
+Network(s): A group of connected devices connected by cable, wi-fi, or satellite
+Internet Protocol (IP): Set of rules governing format of data sent over the Internet.
+Domain Name System (DNS): The protocol for translating between domain names and IP addresses (converts web addresses into IP addresses)
+IP address(es): A unique string of numbers separated by periods that identifies each computer using the Internet Protocol to communicate over a network. Hierarchial
+IPv6: New IP address system, will provide 2^128 (about an undecillion) addresses. 128 bits for each address
+IPv4: Old IP address system, 2^32 addresses (about 4 billion)
+HTTP/HTTPS: Hypertext Transfer Protocol. A conventional set of communication rules for controlling how Web browsers and servers pass information back and forth over the Internet.
+SMTP: Simple Mail Transfer Protocol, protocol for email transmission
+IETF: Internet Engineering Task Force, group of volunteers, defines standard Internet operating protocols such as TCP/IP.
+Hierarchy: Arranged in an order. Examples; IPv4-Domain, sub-domain, host; DNS-root domain, domain, subdomain; the Internet is hierarcial
+Redundancy: Duplication of critical components in case some part goes down. Example; the Internet has many paths between networks
+Routing: Routers send packets (~1500 bytes) as they see fit.
+Reliability: The extent to which we can depend on something to work
+Protocols (include TCP/IP): A well known set of rules or procedures
+Interfaces: shared boundary over which information is shared
+Open Standards: standards made available to the general public, non-proprietary protocols or specifications
+Packet Switching: group data into packets for transmission
+TCP/IP: Basic communication protocol of the Internet
+Browser: software for presenting Web content (Firefox, Chrome, etc.)
+SSL/TLS: Cryptographic protocols for communications security
+Bandwidth: The amount of data that can be transmitted in a fixed amount of time
+Latency: How much time it takes for a packet to get from one point to another point
+Trust model: used to determine security strength of your data in the cloud for example
+Cybersecurity: protecting networks, computers, etc. from attack
+Cyber warfare: the use of computer technology to disrupt the activities of a state or organization, especially the deliberate attacking of information systems for strategic or military purposes.
+cybercrime: criminal activities carried out by means of computers or the Internet.
+DDoS: Distributed Denial of Service, multiple systems flood the bandwidth causing it to run extremely slow or completely shut down
+Phishing: sending fraudulent emails in order to induce individuals to reveal information
+Viruses: malicious software program that replicates
+Antivirus software: detect, prevent, remove viruses
+Firewall: software that blocks unauthorized access
+Cryptography: a method of storing and transmitting data in a particular form so that only those for whom it is intended can read and process it. Examples; Caesar's, Vigenere's, One Time pads
+Symmetric Encryption: private key, uses a singular encryption key (Caesar's, Vigenere's, One Time pads)
+Asymmetric Encryption: Modern public key encryption, makes online secure transactions possible
+Certificate Authorities: Who you purchase digital certificates from
+Digital Certificates: Verifies that a user sending a message is who he or she claims to be
+Computing Innovations: Technology the adds to previously existing technology in order to improve it
+Email: messages distributed by electronic means from one computer user to one or more recipients via a network.
+Cloud computing: use of remote servers to store, manage, and process data
+Dissemination: spreading information
+Public data: Data available to anyone
+GPS: Global positioning system, a radio navigation system that allows land, sea, and airborne users to determine their exact location, velocity, and time 24 hours a day, in all weather conditions, anywhere in the world
+Sensor Networks: networks of sensors to monitor physical or environmental conditions
+"smart": performs many of the functions of a computer, typically having a touchscreen interface, Internet access, and an operating system capable of running downloaded applications
+Assistive technology: Assistive, adaptive, rehabilitative devices for people with disabilities
+Internet vs WWW: Internet is a collection of networks, WWW is a collection of HTML documents
+e-commerce: commercial transactions conducted electronically on the Internet
+Citizen science: involving the public in scientific research
+Distributed Solutions: A distributed approach to computing systems
+Human-Based Computation: a computer science technique in which a machine performs its function by outsourcing certain steps to humans, usually as microwork
+Crowdsourcing: obtaining information by enlisting the service of a large group of people
+Mobile computing: Transmission of data without needing a physical link
+Machine learning: computers with the ability to learn
+Data mining: examining large databases in order to generate new information
+Scientific computing: advanced computing capabilities to solve complex problems
+Open access; creative commons: availability to all
+Moore's law: processing power seems to double every two years
+authenticated: credentials are checked
+download: copy (data) from one computer system to another, typically over the Internet
+streaming: a method of transmitting or receiving data (especially video and audio material) over a computer network as a steady, continuous flow, allowing playback to proceed while subsequent data is being received
+peer-to-peer networks: a network of computers configured to allow file sharing
+Internet censorship: the control or suppression of what can be accessed, published, or viewed on the Internet enacted by regulators, or on their own initiative
+open source software: copyright holder provides the rights to study, change, and distribute software
+Data aggregation: any process in which information is gathered and expressed in a summary form, for purposes such as statistical analysis. A common aggregation purpose is to get more information about particular groups based on specific variables such as age, profession, or income.
+Proxy servers: software that acts as an intermediary between a computer and another server
+Target advertising: Like what we experience when we surf the web
+copyright: the exclusive legal right, given to an originator or an assignee to print, publish, perform, film, or record literary, artistic, or musical material, and to authorize others to do the same
+Digital Millennium Copyright Act: a 1998 US law intended to update copyright law for electronic commerce and electronic content providers. It criminalizes the circumvention of electronic and digital copyright protection systems
+Digital divide: the gulf between those who have ready access to Internet and those who don't
+socioeconomic: social and economic factors that affect a person's abilities to "get ahead"
+infrastructure: the basic physical and organizational structures and facilities (e.g., buildings, roads, and power supplies) needed for the operation of a society or enterprise
+commercial: activities of business, industry, and trade
+creative development: The process of developing creative abilities through exploration, decision making, and expression
+computational artifact: anything created by a human using a computer. An artifact can be, but is not limited to, a program, image, audio, video, presentation, or web page file
+Computing tools/techniques: A program used for software development or system maintenance. Virtually any program or utility that helps programmers or users develop applications or maintain their computers can be called a tool
+abstraction: suppressing the more complex details below the current level
+digital data: data stored fundamentally as bits
+bit: basic unit of information, 1 & 0, on & off
+number bases: binary, decimal, hexadecimal, etc.
+binary sequences: 0s and 1s, example; 1101=13
+programming languages: a formal computer language designed to communicate instructions to a machine, particularly a computer; high and low levels
+real numbers (floating-point): representation of decimals
+software: the programs and other operating information used by a computer
+Levels of abstractions: Internet languages, blocks that call blocks, high level programming languages vs low level programming languages
+low level programming languages: machine language, assembly language
+high level programming languages: Java, JavaScript, Snap, Python
+Binary data: two possible states: 0, 1
+Boolean function: functions that report true or false
+logic gate: an "or" or "and" gate
+chip (as an abstraction): small piece of semi-conducting material
+hardware: physical components of computers
+Data vs Information: Information provides context for data
+iterative: involving repetition; looping
+Filter: remove redundant or unwanted information
+clustering: grouping similar information
+data classification: organizing data into categories
+patterns: finding links between variables
+visualization(s): data in a graphical format examples; Baby Name Voyager, Gap Minder
+Extract(ing): retrieving data from data sources
+trend: a pattern; trend analysis is attempting to spot a pattern
+search tools: search engines like Google, subject directions
+Filter systems (filter tools): used to extract a subset of data
+metadata: data about data; example; memory size of an image
+data file format: show the bits are encoded; .jpg, . xml, .png
+lossless data compression: original data can be perfectly reconstructred like zip files
+storage media: USBs, solid state hard drives, dvds, etc.
+privacy concerns: the concern that your information is being seen even when you don't want it to be
+security concerns: the concern that your devices aren't safe and secure and your information could be compromised
+Algorithm: sequence of actions to be performed
+sequencing: creating the order of actions
+boolean condition: compare two values and report true or false
+selection: a decision; if, if-else
+iteration: repetition/looping
+run time: time required to execute
+pseudo code: informal description of algorithm
+domain: in www.bhbl.org bhbl is the domain
+natural language: English, French, German, etc.
+solvable problem: can be solved with an algorithm
+unsolvable problem: one that can't be solved
+undecidable problem: a decision problem that an algorithm can't solve
+empirical analysis: analyzing data from experiments or observation
+linear search: check every element, slow, works on any list
+programming: the action or process of writing computer programs
+iterative process: repeating a process in order to reach a goal
+sequential execution: executed in order
+executable: a program that performs tasks
+procedure: a method or, in Snap, a block
+parameters: input variables
+data abstraction: creating a data type that hides the details of the data representation
+strings: sequence of characters
+substring: part of a sequence of characters
+concatenation: putting strings together (join block)
+floating-point numbers: decimals (with precision issues)
+lists: ordered collections
+Application Program Interfaces (API's) or libraries: Example; Google Maps API lets developers embed maps on web pages
+Debugging: identify and remove errors from computer hardware or software
+Functionality: the range of functions of an electronic system
+program documentation: comments
+variables: a value that can change
+Simulation benefits: nothing physical must be built, other factors can be incorporated, new alternatives may be considered based on results, usable results are produced
+logical concepts: and, or, not
+Boolean algebra: the values of the variables are true, false
+execution: performing the instructions of a program
+process(es): an instance of a program that is getting executed
+syntax: spelling and grammar of a computer language
+logic: if, if-else, and, or, not
+Heuristic solution: solutions close to the real solution (approximate)
+Analog data: A continuous representation of data
+Bit Rate: the number of bits that are conveyed or processed per unit of time. e.g. 8 bits/sec.
+Compression ratio: A ratio such as 5:1 that indicates the ratio of compression that has been applied to a file. High compression ratios such as 35:1 indicate more compression so data can be contained in smaller files. Summarizes the reduction in size of a file. Can be expressed two different ways, as follows. If more than 1, the compression ratio tells how many times bigger the original file is. If less than 1, the compression ratio tells the percentage by which the original file size has been reduced. A compressed data divided by original data
+Cookies: Small text files that are sent to your computer from certain websites. They track your behavior and transactions. A small text file placed on your computer when you visit a Web page. Used to remember you or your preferences when you revisit that page or to track your browsing activities, cookies facilitate virtual shopping carts, page customization, and targeted advertising. They are not programs and cannot read your hard drive or cause damage to your computer.
+Creative Commons License: is used when an author wants to give people the right to share, use, and build upon a work that he has created.
+Data encryption: What process secures a wireless network by protecting data packets being transmitted? Scrambling the data in a message in a systematic way in order to prevent competitors from electronically monitoring confidential data transmission
+Domain internet vs Sub domain (second, third, fourth, level domains): For instance, http//sub.example.com http is the protocol sub.example is second level domain com is top level domain
+Encryption: Process of converting readable data into unreadable characters to prevent unauthorized access.
+Heuristic: a problem solving approach (algorithm) to find a satisfactory solution where finding an optimal or exact solution is impractical or impossible.
+For loop: An iteration structure that repeats one or more statements a specified number of times
+High level programming: Provides strong abstraction from the hardware and allows a program to be written in a language that can run on multiple types of computers. Visual by humans. Visual Basics, Python, Java. English type language for programming. Differentiates the language from assembly language and binary which are technically also programming languages
+HTTP (Hypertext Transfer Protocol): the set of rules for transferring files (text, graphic images, sound, video, and other multimedia files) on the World Wide Web. As soon as a Web user opens their Web browser, the user is indirectly making use of HTTP. HTTP is an application protocol that runs on top of the TCP/IP suite of protocols (the foundation protocols for the Internet).
+ISP: Internet Service Provider
+Iterative: A process that repeats a series of steps over and over until the desired outcome is obtained.
+JPEG (Joint Photographic Experts Group): The type of image file used most commonly by photographers.
+Lossless Compression: a data compression algorithm that allows the original data to be perfectly reconstructed from the compressed data.
+lossy compression: a process of reducing a file's size by altering and/or eliminating some pixels
+Malware: Malicious software created specifically for the purpose of infiltrating or damaging a computer system without the user's knowledge or consent includes a variety of technologies, including viruses, Trojan horses, worms, spyware, and adware
+Net Neutrality: The principle that Internet service providers should enable access to all content and applications regardless of the source, and without favoring or blocking particular products or websites.
+Network Redundancy: having multiple backups to ensure reliability during cases of high usage or failure. Router - A type of computer that forwards data across a network. Redundant routing is impossible if there is only one possible path from one device to another.
+Packets: Small chunks of information that have been carefully formed from larger chunks of information.
+PNG: Portable Network Graphics. This supports advanced transparency, has a relatively average file size, and can be interlaced, optimizing for internet use. A raster file that supports transparency and is best used for line art, logos, photographs and web but is not suitable for print.
+Public Key Encryption: technique that uses a paired public and private key (or asymmetric key) algorithm for secure data communication.
+RGB: and blue light are added together in various ways to reproduce a broad array of colors. The name of the model comes from the initials of the three additive primary colors, red(0-255), green(0-255), and blue(0-255).
+Scalability: Google's track record of maintaining excellent performance while dramatically increasing the number of simultaneous users accessing its systems best exemplifies what network/system attribute?
+Server: A computer that awaits and responds to requests for data.
+Spoofing: When someone pretends to be someone else with the intent of obtaining unauthorized data.
+SSL: ____ is a method of encrypting TCP/IP transmissions above the network layer.
+TCP: Transmission Control Protocol
+Trojan horse: What is the program that appears to be a legitimate application, utility, game, or screensaver and that performs malicious activities surreptitiously? Masquerades as beneficial program while quietly destroying/damaging your systemwww.crackap.com

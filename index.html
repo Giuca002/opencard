@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <div class="flip-card" style="margin: auto; text-align:center">
+    <h1 id="title" style="text-align: center;">OpenCards</h1>
+    <div class="slider" style="text-align:center;">
+      <button class="btn white" onclick="alert('Coming soon')"> New Set </button>
+      <button class="btn white" onclick="alert('Coming soon')"> Edit Set </button>
+      
+      <label for="inputbox" class="btn white">Load Set</label>
+      <input name="Load Set" id="inputbox" type="file" onchange="loadFileAsText()">
+
+      <button class="btn white" onclick="alert('Coming soon')"> Theme </button>
+    </div>
+
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h1 id="frontText"></h1>
+      </div>
+      <div class="flip-card-back">
+        <div class="flashcard-text">
+          <span id="backText"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider2" style="text-align:center;">
+      <button class="btn white" onclick="prevCard()"> < </button>
+      <button class="btn white" id="cardCounter" onclick="jumpTo()" class="button"> N/A </button>
+      <button onclick="nextCard()" class="btn white"> > </button>
+    </div>
+    <div style="justify-content: left; text-align:left;" class="progress-container">
+      <progress id="progress"></progress>
+    </div>
+  </div>
+  <footer style="bottom: 0; width: 100%; text-align: center; position:fixed; margin-bottom: 1%;">Copyright © 2024 Giuca002 All Rights
+    Reserved</footer>
+  <script src="logic.js"></script>  
+
+</body>
+
+</html>

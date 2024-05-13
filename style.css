@@ -1,0 +1,245 @@
+:root {
+    --dark: #202124;
+    --light: #fcfafa;
+  }
+  
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    background-color: var(--light);
+    height: 100%;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: -250%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
+  @keyframes slideout {
+    from {
+      margin-left: 0%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 250%;
+      width: 100%;
+    }
+  }
+  
+  .flip-card {
+    background-color: transparent;
+    max-width: 814px;
+    height: 100%;
+    max-height: 428px;
+    perspective: min(900px, 50%);
+    
+  
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+  
+  .btn {
+    border: none;
+    color: var(--dark);
+    padding: 15px 32px;
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: max(4px,8px) 2px;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+  }
+
+  .white {
+    background-color: white;
+    box-shadow: 0px 5px 0px 0px #dbdada;
+  }
+
+  .white:hover {
+    background-color: rgb(247, 246, 246);
+    box-shadow: 0px 5px 0px 0px #3295b9c9;
+  }
+
+  .blue {
+    background-color: #55acee;
+    box-shadow: 0px 5px 0px 0px #3C93D5;
+  }
+  
+  .blue:hover {
+    background-color: #6FC6FF;
+  }
+
+  .button {
+    border: none;
+    color: var(--dark);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: max(4px,8px) 2px;
+    margin-bottom: none;
+    padding-bottom: none;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5%;
+  }
+
+  #button2 {
+    border: none;
+    color: var(--dark);
+    padding: 10px 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: max(4px,8px) 2px;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 50%;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 #dbdada;;
+  
+    animation-duration: 2s;
+    animation-name: slidein;
+    margin-bottom: 1%;
+  }
+  
+  .flip-card-clicked .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: white;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #fff;
+    background-image:
+    
+    linear-gradient(#eee .1em, transparent .1em), linear-gradient(red .1em, transparent .1em);
+    background-size: 100% 1.2em, 100% 6.0em;
+    background-repeat: repeat, no-repeat;  
+    background-position: 0 18px, 0 20px;
+  
+    color: black;
+    transform: rotateY(180deg);
+  }
+  
+  .slider {
+    left: 0;
+    overflow: hidden;
+    width: 100%; /* Occupy the full available width */
+    max-width: 814px; /* Limit the width to 600 pixels */
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    margin-bottom: 1%;
+  }
+
+  .slider2 {
+    left: 0;
+    overflow: hidden;
+    width: 100%; /* Occupy the full available width */
+    max-width: 814px; /* Limit the width to 600 pixels */
+    height: auto;
+    margin-bottom: 1%;
+  }
+
+
+  
+  .flashcard-text {
+    height: 115px; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 20px 0; /* Adjust padding to position the text between the lines */
+  }
+  
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    text-align: center;
+    max-width: 90%;
+    position: relative;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(calc(-49%)); /* Adjust vertical positioning */
+  }
+
+  progress {
+    border-radius: 25px;
+    background-color: transparent;
+
+    transition: width .9s cubic-bezier(0.4, 0.0, 0.2, 1);
+  }
+
+  .progress-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Spread items evenly */
+    align-items: center; /* Center items vertically */
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0; /* Ensure no margin is affecting the size */
+    width: 100%; /* Take up full width */
+    box-shadow: 0px 5px 0px 0px #dbdada;
+  }
+
+  ::-webkit-progress-value {
+    background-color: #3aadd8;
+    border-radius: 25px;
+  }
+  
+
+  ::-moz-progress-bar {
+    background-image: linear-gradient(to right, #49b3da , #78bfda);
+    border-radius: 25px;
+  }
+  
+  @keyframes progressBar {
+    0% { left:0;width: 0; }
+    50% { left:0;width: 100%; }
+    100% {left:100%;width: 0}
+  } 
