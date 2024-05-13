@@ -50,7 +50,11 @@ html, body {
   }
   
   .btn {
-    border: none;
+    border-style: solid;
+    border-color: #e5e5e5;
+    border-width: 3px;
+    user-select: none;
+
     color: var(--dark);
     padding: 15px 32px;
     width: 25%;
@@ -67,12 +71,17 @@ html, body {
 
   .white {
     background-color: white;
-    box-shadow: 0px 5px 0px 0px #dbdada;
+    box-shadow: 0px 5px 0px 0px #e5e5e5;
   }
 
   .white:hover {
-    background-color: rgb(247, 246, 246);
-    box-shadow: 0px 5px 0px 0px #3295b9c9;
+    filter: brightness(0.9);
+  }
+
+  .white:active {
+    background-color: white;
+    box-shadow: none;
+    transform: translate(0, 5px);
   }
 
   .blue {
@@ -228,14 +237,15 @@ html, body {
   }
 
   ::-webkit-progress-bar {
-    background-color: #3aadd8;
-    border-radius: 25px;
+    background-image: linear-gradient(to right, #49b3da , #6ebcdb);
+    border-radius: 5px;
   }
+
   
 
   ::-moz-progress-bar {
-    background-image: linear-gradient(to right, #49b3da , #78bfda);
-    border-radius: 25px;
+    background-image: linear-gradient(to right, #49b3da , #6ebcdb);
+    border-radius: 5px;
   }
   
   @keyframes progressBar {
@@ -243,3 +253,9 @@ html, body {
     50% { left:0;width: 100%; }
     100% {left:100%;width: 0}
   } 
+
+  .mobileShow {display: inline;} 
+
+  @media only screen and (max-width: 600px) {
+    .mobileShow {display: none;}
+  }
