@@ -133,6 +133,10 @@ flipCardElement.addEventListener('touchstart', function(event) {
     }
 });
 
+flipCardElement.addEventListener('touchend', function(event) {
+    touchStartFired = false;
+});
+
 // For desktop browsers
 flipCardElement.addEventListener('click', function(event) {
     // If touchstart has been fired, prevent click event
