@@ -96,28 +96,30 @@ function flipCard() {
 
 
 function jumpTo() {
-  let page = prompt("Please enter a card number", "1");
-  if (Number.isInteger(Number(page)) && page < flashcardsData.length) {
-    if (Number(page) > 0 && isMoving == false) {
-      isMoving = true
-      // Trigger slideout animation
-      const flipCardInner = document.querySelector('.flip-card-inner');
-      flipCardInner.style.animationName = 'slideout';
-      flipCardInner.style.animationDuration = '1.5s';
+  if (flashcardsData.length > 0 && isMoving == false) {   
+    let page = prompt("Please enter a card number", "1");
+    if (Number.isInteger(Number(page)) && page < flashcardsData.length) {
+        if (Number(page) > 0 && isMoving == false) {
+        isMoving = true
+        // Trigger slideout animation
+        const flipCardInner = document.querySelector('.flip-card-inner');
+        flipCardInner.style.animationName = 'slideout';
+        flipCardInner.style.animationDuration = '1.5s';
 
-      // Delay changing the card index until after the slideout animation completes
-      setTimeout(() => {
-        currentCardIndex = Number(page) - 1;
-        document.querySelector('.flip-card').style.visibility = "hidden";
-        showCard(currentCardIndex);
-        document.querySelector('.flip-card').style.visibility = "visible";
+        // Delay changing the card index until after the slideout animation completes
+        setTimeout(() => {
+            currentCardIndex = Number(page) - 1;
+            document.querySelector('.flip-card').style.visibility = "hidden";
+            showCard(currentCardIndex);
+            document.querySelector('.flip-card').style.visibility = "visible";
 
-        // Reset animation name to trigger slidein animation
-        flipCardInner.style.animationName = 'slidein';
-      }, 1500); // Adjust the delay time to match the animation duration
-      isMoving = false
+            // Reset animation name to trigger slidein animation
+            flipCardInner.style.animationName = 'slidein';
+        }, 1500); // Adjust the delay time to match the animation duration
+        isMoving = false
+        }
     }
-  }
+  }  
 }
 // Add event listener to flip card on click
 var flipCardElement = document.querySelector('.flip-card-inner');
