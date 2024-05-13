@@ -4,12 +4,15 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <title>OpenCard</title>
+
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
-
-  <div class="flip-card" style="margin: auto; text-align:center">
-    <h1 id="title" style="text-align: center;">OpenCards</h1>
+  <div class="controls" style="margin: auto;">
+    <h1 id="title" style="text-align: center;">OpenCard</h1>
     <div class="slider" style="text-align:center;">
       <button class="btn white" onclick="alert('Coming soon')"> New Set </button>
       <button class="btn white" onclick="alert('Coming soon')"> Edit Set </button>
@@ -19,18 +22,19 @@
 
       <button class="btn white" onclick="alert('Coming soon')"> Theme </button>
     </div>
+    <div class="flip-card" style="height: 100%; margin: auto; text-align:center;">
 
-    <div class="flip-card-inner">
-      <div class="flip-card-front">
-        <h1 id="frontText"></h1>
-      </div>
-      <div class="flip-card-back">
-        <div class="flashcard-text">
-          <span id="backText"></span>
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h1 id="frontText"></h1>
+        </div>
+        <div class="flip-card-back">
+          <div class="flashcard-text">
+            <span id="backText"></span>
+          </div>
         </div>
       </div>
     </div>
-
     <div class="slider2" style="text-align:center;">
       <button class="btn white" onclick="prevCard()"> < </button>
       <button class="btn white" id="cardCounter" onclick="jumpTo()" class="button"> N/A </button>
