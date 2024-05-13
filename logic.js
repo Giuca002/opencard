@@ -91,6 +91,7 @@ function nextCard() {
 function flipCard() {
   const flipCard = document.querySelector('.flip-card');
   flipCard.classList.toggle('flip-card-clicked');
+  touchStartFired = false;
 }
 
 
@@ -127,22 +128,11 @@ flipCardElement.addEventListener('touchstart', function(event) {
     event.preventDefault();
     // Call your flipCard function here
     if (!touchStartFired) {
-        flipCard();
         touchStartFired = true;
+        flipCard();
+        
     }
 });
-
-// Reset touchStartFired when touch moves outside flipCardElement
-document.addEventListener('touchmove', function(event) {
-    if (!event.target.closest('#flipCardElement')) {
-        touchStartFired = false;
-    }
-});
-
-flipCardElement.addEventListener('touchend', function(event) {
-    touchStartFired = false;
-});
-
 
 // For desktop browsers
 flipCardElement.addEventListener('click', function(event) {
