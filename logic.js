@@ -126,6 +126,18 @@ function jumpTo() {
 var flipCardElement = document.querySelector('.flip-card-inner');
 let touchStartFired = false;
 
+var loadElement = document.getElementById("loadbtn");
+
+loadElement.addEventListener('touchstart', function(event) {
+  // Prevent the default action to avoid double click/tap
+  event.preventDefault();
+  // Call your flipCard function here
+  openModal()
+  
+      
+});
+
+
 flipCardElement.addEventListener('touchstart', function(event) {
     // Prevent the default action to avoid double click/tap
     event.preventDefault();
