@@ -12,6 +12,6 @@ jobs:
       - uses: strumwolf/delete-deployment-environment@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          environment: my-environment-name
-          ref: my-branch
+          environment: github-pages
+          ref: main
           onlyRemoveDeployments: true
