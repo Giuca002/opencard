@@ -1,6 +1,10 @@
-name: Delete Deployments Ref
+name: Delete Github-Pages Deployments
 
 on: push
+
+permissions:
+  actions: write
+  deployments: write
 
 jobs:
   delete:
