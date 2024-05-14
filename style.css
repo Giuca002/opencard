@@ -76,6 +76,26 @@ html, body {
     border-radius: 5px;
   }
 
+  .btn2 {
+    border-style: solid;
+    border-color: #e5e5e5;
+    border-width: 3px;
+    user-select: none;
+    margin: auto;
+
+    color: var(--dark);
+    padding: 15px 32px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+  }
+
   .white {
     background-color: white;
     box-shadow: 0px 5px 0px 0px #e5e5e5;
@@ -260,6 +280,64 @@ html, body {
 
   .mobileShow {display: inline;} 
 
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height of viewport */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    padding-top: 5%;
+  }
+
+  /* Modal Content */
+  .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      border: 1px solid #888;
+      width: 50%;
+      height: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+    padding-right: 3%;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
   @media only screen and (max-width: 600px) {
     .mobileShow {display: none;}
+    .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 10px;
+      border: 1px solid #888;
+      width: 100%;
+    }
   }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 85%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
