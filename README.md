@@ -16,3 +16,4 @@ Simply download the example flashcard text file and click on load set in the web
 ## Credits
 - https://www.svgrepo.com/svg/511089/note
 - https://www.w3schools.org
+- https://www.crackap.com
