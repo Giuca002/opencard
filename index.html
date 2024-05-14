@@ -27,7 +27,7 @@
       <button class="btn white" onclick="alert('Coming soon')"> New Set </button>
       <button class="btn white" onclick="alert('Coming soon')"> Edit Set </button>
       
-      <label for="inputbox" class="btn white">Load Set</label>
+      <label onclick="openModal()" class="btn white">Load Set</label>
       <input name="Load Set" id="inputbox" type="file" onchange="loadFileAsText()">
 
       <button class="btn white" onclick="alert('Coming soon')"> Theme </button>
@@ -53,6 +53,36 @@
     <div style="justify-content: left; text-align:left;" class="progress-container">
       <progress id="progress" style="width: 100%;"></progress>
     </div>
+  </div>
+  
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div style="text-align: center;" class="modal-content">
+        <div style="display: flex; align-items: center; justify-content: center; text-align: center; position: relative;">
+            <h1 style="flex: 1;">Select a Flashcard Set</h1>
+            <span onclick="closeModal()" class="close" style="position: absolute; right: 0;">&times;</span>
+        </div>
+        <p>Use one of the community curated flashcard sets below or use your own.</p>
+
+        <div style="margin: 0 auto; width: 70%;">
+            <table id="table" style="width: 100%; text-align: center;">
+                <tr>
+                    <th>Name</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>Use your own set...</td>
+                    <td><label for="inputbox" class="btn white">Upload</label></td>
+                </tr>
+            </table>
+          </div>
+      </div>
+  </div>
+
+  
+  
+  
+  
   </div>
   <footer class="mobileShow" style="bottom: 0; width: 100%; text-align: center; position:fixed; margin-bottom: 1%;">Copyright © 2024 Giuca002 All Rights
     Reserved</footer>
