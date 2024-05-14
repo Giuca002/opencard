@@ -166,6 +166,7 @@ function closeModal() {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
+  var modal = document.getElementById("myModal");
   if (event.target == modal) {
     modal.style.display = "none";
   }
@@ -178,12 +179,12 @@ function fetchDataAndUpdateTable() {
           data.tree.forEach(item => {
               if (item.type === 'blob' && item.path.endsWith('.txt')) {
                   const name = item.path.replace('.txt', ''); // Extracting name from path
-                  const contentUrl = item.url; // URL to fetch content
+                  const contentUrl = "https://raw.githubusercontent.com/Giuca002/opencard/main/" + item.path;
                   // Create new row
                   var newRow = document.createElement('tr');
                   newRow.innerHTML = `
                       <td>${name}</td>
-                      <td><button class="btn2 white" onclick="fetchAndPrintContent('${contentUrl}')">Use</button></td>
+                      <td><button class="btn2 white" onclick="fetchAndPrintContent('${contentUrl}'); document.getElementById('title').innerText = '${name}';">Use</button></td>
                   `;
                   document.getElementById('table').appendChild(newRow);
               }
@@ -194,12 +195,12 @@ function fetchDataAndUpdateTable() {
 
 function fetchAndPrintContent(url) {
   fetch(url)
-      .then(response => response.json())
+      .then(response => response.text()) // Fetch response as text
       .then(fileData => {
-          // Decode content from base64
-          const decodedContent = atob(fileData.content);
-
-          var textFromFileLoaded = decodedContent;
+          // Parse the text content
+          // Assuming fileData is a string in this example
+          // You might need different parsing logic based on the actual content
+          var textFromFileLoaded = fileData;
 
           flashcardsData = textFromFileLoaded.trim().split('\n').map(line => line.split(':'));
           currentCardIndex = 0;
@@ -207,11 +208,13 @@ function fetchAndPrintContent(url) {
           document.querySelector('.flip-card').classList.remove('flip-card-clicked');
 
           var modal = document.getElementById("myModal");
+          
 
           modal.style.display = "none";
       })
       .catch(error => console.error('Error fetching content:', error));
 }
+
 
 // Call the function when the page loads
 window.onload = fetchDataAndUpdateTable;
