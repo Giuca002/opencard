@@ -16,6 +16,7 @@ function loadFileAsText() {
     currentCardIndex = 0;
     showCard(currentCardIndex);
     document.querySelector('.flip-card').classList.remove('flip-card-clicked');
+    closeModal()
   };
 
   fileReader.readAsText(fileToLoad, "UTF-8");
@@ -143,3 +144,70 @@ flipCardElement.addEventListener('click', function(event) {
         flipCard();
     }
 });
+
+
+function openModal() {
+  var modal = document.getElementById("myModal");
+
+  modal.style.display = "block";
+
+}
+
+function closeModal() {
+  var modal = document.getElementById("myModal");
+
+  modal.style.display = "none";
+
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+function fetchDataAndUpdateTable() {
+  fetch('https://api.github.com/repos/Giuca002/opencard/git/trees/ec7bff6462a7895aaad965b712640bd3c5200d37')
+      .then(response => response.json())
+      .then(data => {
+          data.tree.forEach(item => {
+              if (item.type === 'blob' && item.path.endsWith('.txt')) {
+                  const name = item.path.replace('.txt', ''); // Extracting name from path
+                  const contentUrl = item.url; // URL to fetch content
+                  // Create new row
+                  var newRow = document.createElement('tr');
+                  newRow.innerHTML = `
+                      <td>${name}</td>
+                      <td><button class="btn2 white" onclick="fetchAndPrintContent('${contentUrl}')">Use</button></td>
+                  `;
+                  document.getElementById('table').appendChild(newRow);
+              }
+          });
+      })
+      .catch(error => console.error('Error fetching data:', error));
+}
+
+function fetchAndPrintContent(url) {
+  fetch(url)
+      .then(response => response.json())
+      .then(fileData => {
+          // Decode content from base64
+          const decodedContent = atob(fileData.content);
+
+          var textFromFileLoaded = decodedContent;
+
+          flashcardsData = textFromFileLoaded.trim().split('\n').map(line => line.split(':'));
+          currentCardIndex = 0;
+          showCard(currentCardIndex);
+          document.querySelector('.flip-card').classList.remove('flip-card-clicked');
+
+          var modal = document.getElementById("myModal");
+
+          modal.style.display = "none";
+      })
+      .catch(error => console.error('Error fetching content:', error));
+}
+
+// Call the function when the page loads
+window.onload = fetchDataAndUpdateTable;
