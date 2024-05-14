@@ -113,6 +113,17 @@ html, body {
       transform: translate(0, 5px);
     }
   }
+  
+  .white:hover {
+    filter: brightness(0.9);
+  }
+  
+
+  .white:active {
+    background-color: white;
+    box-shadow: none;
+    transform: translate(0, 5px);
+  }
 
   .blue {
     background-color: #55acee;
