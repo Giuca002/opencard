@@ -24,13 +24,13 @@
   <div class="controls" style="margin: auto;">
     <h1 id="title" style="text-align: center;">OpenCard</h1>
     <div class="slider" style="text-align:center;">
-      <button class="btn white" onclick="alert('Coming soon')"> New Set </button>
-      <button class="btn white" onclick="alert('Coming soon')"> Edit Set </button>
+      <button class="btn white" onclick="alert('Coming soon')">New Set</button>
+      <button class="btn white" onclick="alert('Coming soon')">Edit Set</button>
       
       <button onclick="document.getElementById('myModal').style.display = 'block'" class="btn white">Load Set</button>
       <input name="Load Set" id="inputbox" type="file" onchange="loadFileAsText()">
 
-      <button class="btn white" onclick="alert('Coming soon')"> Theme </button>
+      <button class="btn white" onclick="alert('Coming soon')">Theme</button>
     </div>
     <div class="flip-card" style="height: 100%; margin: auto; text-align:center;">
 
@@ -64,7 +64,7 @@
         </div>
         <p>Use one of the community curated flashcard sets below or use your own.</p>
 
-        <div style="margin: 0 auto; width: 70%;">
+        <div style="margin: auto; padding: 12px;">
             <table id="table" style="width: 100%; text-align: center;">
                 <tr>
                     <th>Name</th>
@@ -72,7 +72,7 @@
                 </tr>
                 <tr>
                     <td>Use your own set...</td>
-                    <td><label for="inputbox" class="btn2 white">Upload</label></td>
+                    <td><button for="inputbox" class="btn2 white" onclick="document.getElementById('inputbox').click();">Upload</button></td>
                 </tr>
             </table>
           </div>
