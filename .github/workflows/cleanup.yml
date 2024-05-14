@@ -1,9 +1,6 @@
 name: Delete Deployments Ref
 
-on:
-  delete:
-    branches-ignore:
-      - main
+on: push
 
 jobs:
   delete:
