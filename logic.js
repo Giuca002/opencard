@@ -187,7 +187,7 @@ function fetchDataAndUpdateTable() {
             data.tree.forEach(item => {
               if (item.type === 'blob' && item.path.endsWith('.txt')) {
                 const name = item.path.replace('.txt', ''); // Extracting name from path
-                const contentUrl = `https://raw.githubusercontent.com/Giuca002/opencard/main/${item.path}`;
+                const contentUrl = `https://raw.githubusercontent.com/Giuca002/opencard/community-cards/${item.path}`;
                 
                 // Create new row
                 var newRow = document.createElement('tr');
