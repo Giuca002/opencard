@@ -173,25 +173,40 @@ window.onclick = function(event) {
 }
 
 function fetchDataAndUpdateTable() {
-  fetch('https://api.github.com/repos/Giuca002/opencard/git/trees/ec7bff6462a7895aaad965b712640bd3c5200d37')
-      .then(response => response.json())
-      .then(data => {
-          data.tree.forEach(item => {
+  fetch('https://api.github.com/repos/Giuca002/opencard/branches')
+    .then(response => response.json())
+    .then(data => {
+      const branch = data.find(branch => branch.name === 'community-cards');
+      if (branch) {
+        const sha = branch.commit.sha;
+
+        // Fetch the tree using the SHA
+        fetch(`https://api.github.com/repos/Giuca002/opencard/git/trees/${sha}`)
+          .then(response => response.json())
+          .then(data => {
+            data.tree.forEach(item => {
               if (item.type === 'blob' && item.path.endsWith('.txt')) {
-                  const name = item.path.replace('.txt', ''); // Extracting name from path
-                  const contentUrl = "https://raw.githubusercontent.com/Giuca002/opencard/main/" + item.path;
-                  // Create new row
-                  var newRow = document.createElement('tr');
-                  newRow.innerHTML = `
-                      <td>${name}</td>
-                      <td><button class="btn2 white" onclick="fetchAndPrintContent('${contentUrl}'); document.getElementById('title').innerText = '${name}';">Use</button></td>
-                  `;
-                  document.getElementById('table').appendChild(newRow);
+                const name = item.path.replace('.txt', ''); // Extracting name from path
+                const contentUrl = `https://raw.githubusercontent.com/Giuca002/opencard/main/${item.path}`;
+                
+                // Create new row
+                var newRow = document.createElement('tr');
+                newRow.innerHTML = `
+                  <td>${name}</td>
+                  <td><button class="btn2 white" onclick="fetchAndPrintContent('${contentUrl}'); document.getElementById('title').innerText = '${name}';">Use</button></td>
+                `;
+                document.getElementById('table').appendChild(newRow);
               }
-          });
-      })
-      .catch(error => console.error('Error fetching data:', error));
+            });
+          })
+          .catch(error => console.error('Error fetching tree data:', error));
+      } else {
+        console.log('Branch not found');
+      }
+    })
+    .catch(error => console.error('Error fetching data:', error));
 }
+
 
 function fetchAndPrintContent(url) {
   fetch(url)
